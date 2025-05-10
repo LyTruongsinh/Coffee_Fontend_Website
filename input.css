@@ -5,6 +5,9 @@
 body {
     @apply font-Poppins max-w-[1920px] mx-auto bg-white text-green-950 text-sm;
 }
+section {
+    @apply py-24 md:py-32;
+}
 h1 {
     @apply text-white text-5xl font-bold md:text-7xl lg:text-[80px] xl:text-[100px];
 }
@@ -39,4 +42,25 @@ h4 {
 }
 .nav__icons li:hover a{
     @apply text-white duration-300;
+}
+
+/* button */
+.btn-primary,
+.btn-secondary
+{
+    @apply relative flex h-14 w-48 bg-green-800 items-center justify-center
+    text-white uppercase shadow-2xl overflow-hidden transition-all 
+    before:absolute
+    before:h-0
+    before:w-0
+    before:rounded-full
+    before:bg-white
+    before:duration-500
+    before:ease-out
+    hover:text-black
+    hover:before:h-60
+    hover:before:w-60;
+}
+.btn-secondary {
+    @apply bg-black;
 }
