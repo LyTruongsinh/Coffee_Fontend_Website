@@ -64,3 +64,16 @@ h4 {
 .btn-secondary {
     @apply bg-black;
 }
+
+/* about */
+.about__item__img img,
+.about__item__img h3 {
+    @apply cursor-pointer duration-300;
+}
+
+.about__item__img:hover img {
+    @apply rotate-45;
+}
+.about__item__img:hover h3 {
+    @apply scale-50;
+}
