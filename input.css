@@ -2,6 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+    @apply scroll-smooth overflow-x-hidden bg-green-950;
+}
 body {
     @apply font-Poppins max-w-[1920px] mx-auto bg-white text-green-950 text-sm;
 }
